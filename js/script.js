@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $("#order-details").hide();
   $("#deliver").hide();
-  // Business Logic
+
+
   var totalPriceArray = [];
   function Order(size, crust, toppings, amount) {
     this.size = size;
@@ -18,283 +19,34 @@ $(document).ready(function() {
     } else if (this.size === "large-pizza") {
       this.pizzaPrice += 1000;
     }
-    if (this.crust === "cheese-filled") {
+    if (this.crust === "thin") {
       this.pizzaPrice += 100;
     } else if (this.crust === "thick") {
       this.pizzaPrice += 150;
-    } else if (this.crust === "stuffed") {
-      this.pizzaPrice += 150;
-    } else if (this.crust === "crispy") {
+    } else if (this.crust === "custom") {
       this.pizzaPrice += 150;
     }
-    if (this.toppings === "pepperoni") {
+    if (this.toppings === "tomato") {
       this.pizzaPrice += 100;
-    } else if (this.toppings === "sausage") {
+    } else if (this.toppings === "mushroom") {
       this.pizzaPrice += 150;
-    } else if (this.toppings === "bacon") {
+    } else if (this.toppings === "pepper") {
       this.pizzaPrice += 200;
-    } else if (this.toppings === "mushrooms") {
+    } else if (this.toppings === "mince") {
       this.pizzaPrice += 150;
-    } else if (this.toppings === "chicken") {
+    } else if (this.toppings === "onions") {
       this.pizzaPrice += 150;
     }
   };
 
-// function Pizza () {
-//     this.toppings = [];
-//     this.size;
-//     this.total;
-// }
-// Pizza.prototype.cost = function () {
-//     var cost = 0;
-//     this.toppings.map(function(topping) {
-//       cost += topping
-//     });
-//     var total = cost + this.size;
-//     this.total = "Your total is: " + "$" + total.toFixed(2);
-//   };
-  //check price
-  // let price, totalPrice;
-  // switch (flavour) {
-  //     case flavour = "vegtikka":
-  //         switch (size) {
-  //             case size = "small":
-  //                 price = 300;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "medium":
-  //                 price = 600;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "large":
-  //                 price = 1200;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //         }
-  //         break;
-  //     case flavour = "chickentikka":
-  //         switch (size) {
-  //             case size = "regular":
-  //                 price = 300;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "medium":
-  //                 price = 600;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "large":
-  //                 price = 1200;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //         }
-  //         break;
-  //     case flavour = "periperichicken":
-  //         switch (size) {
-  //             case size = "regular":
-  //                 price = 300;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "medium":
-  //                 price = 600;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "large":
-  //                 price = 1200;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //         }
-  //         break;
-  //     case flavour = "bbqsteak":
-  //         switch (size) {
-  //             case size = "small":
-  //                 price = 300;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "medium":
-  //                 price = 600;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "large":
-  //                 price = 1200;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "flatbread") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //         }
-  //         break;
-  //     case flavour = "hawaian":
-  //         switch (size) {
-  //             case size = "small":
-  //                 price = 300;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "medium":
-  //                 price = 600;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "large":
-  //                 price = 1200;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "custom") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //         }
-  //         break;
-  //     case flavour = "hawaiian":
-  //         switch (size) {
-  //             case size = "small":
-  //                 price = 300;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "flatbread") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "medium":
-  //                 price = 600;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "flatbread") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //             case size = "large":
-  //                 price = 1200;
-  //                 if (crust === "thin") {
-  //                     totalPrice = (price * number) + 100;
-  //                 } else if (crust === "thick") {
-  //                     totalPrice = (price * number) + 150;
-  //                 } else if (crust === "flatbread") {
-  //                     totalPrice = (price * number) + 180;
-  //                 } else {
-  //                     totalPrice = (price * number) + 280;
-  //                 }
-  //                 break;
-  //         }
-  //         break;
-     
-  // };
+ function Address(address) {
+  this.address = address;
+  this.deliveryAddress = (address);
+}
+Order.prototype.finalCost = function() {
+  var shopCartTotalPrice = [];
+  for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
+    shopCartTotalPrice += totalPriceArray[arrayElement];
+  }
+  return shopCartTotalPrice;
+};
