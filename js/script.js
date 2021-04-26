@@ -168,7 +168,7 @@ $(document).ready(function() {
     var flavour = $("select#flavour").val();
     var crust = $("select#crust").val();
     var toppings = $("select#toppings").val();
-    var pizzaDetails = (size + " - " + crust + " - " + toppings);
+    var pizzaDetails = (size + " - " + flavour + " - " +crust + " - " + toppings);
     var newPizzaOrder = new Order(size, flavour,crust, toppings);
     newPizzaOrder.pizzaCost();
     totalPriceArray.push(newPizzaOrder.pizzaPrice);
