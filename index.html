@@ -45,17 +45,16 @@
     <div class="prices ">
         <p class="about">The Pizza Palace is an industry leader in the quick service delivery pizza game.<br> Serving hot oven-fresh pizza with its signature all-natural ketchup and using only the freshest ingredients.<br> The homemade pizza dough is
         produced in-house daily and is another reason why the pizza at The Pizza Palace always tastes better and we have plenty "value-for-money" options that keep our satisfied customers coming back time after time.</p><br><br>
-        <h2>Order here</h2>
+    
     </div>
     <form class="form-group" id="custom-pizza">
         <div class="order">
             <div class="row">
                 <div class="col-md-4 col-xs-9">
                     <div class="card">
-                        <img src="/images/img3.png" class="card-img-top" alt="...">
+                        <img src="/images/img3.png" class="card-img-top" alt="none">
                         <div class="card-body">
-                            <h5 class="card-title">Sizes of pizza</h5>
-                            <p class="card-text">Choose the size of Pizza:</p>
+                            <p class="card-text">Choose pizza size</p>
                             <select required class="form-control" id="size">
                                 <option></option>
                                 <option value="small-pizza">small (300)</option>
@@ -67,15 +66,14 @@
                 </div>
                 <div class="col-md-4 col-xs-9">
                     <div class="card">
-                        <img src="/images/img1.png" class="card-img-top" alt="...">
+                        <img src="/images/img1.png" class="card-img-top" alt="none">
                         <div class="card-body">
-                            <h5 class="card-title">Crust</h5>
                             <p class="card-text">Choose a crust:</p>
                             <select required class="form-control" id="crust">
                                 <option></option>
                                 <option value="thin">Thin (100)</option>
                                 <option value="thick">Thick (150)</option>
-                                <option value="custom">Stuffed (180)</option>
+                                <option value="custom">Custom (180)</option>
                                 
                             </select>
                         </div>
@@ -83,10 +81,10 @@
                 </div>
                 <div class="col-md-4 col-xs-9">
                   <div class="card">
-                      <img src="/images/img3.png" class="card-img-top" alt="...">
+                      <img src="/images/img3.png" class="card-img-top" alt="none">
                       <div class="card-body">
-                          <h5 class="card-title">Flavours</h5>
-                          <p class="card-text">Choose your prefered flavour:</p>
+                          
+                          <p class="card-text">Choose your prefered flavour</p>
                           <select required class="form-control" id="size">
                               <option></option>
                               <option value="bbqsteak">BBQ Steak (50)</option>
@@ -99,10 +97,10 @@
               </div>
                 <div class="col-md-4 col-xs-9">
                     <div class="card">
-                        <img src="/images/img2.png" class="card-img-top" alt="...">
+                        <img src="/images/download (1).jpeg" class="card-img-top" alt="none">
                         <div class="card-body">
-                            <h5 class="card-title">Toppings</h5>
-                            <p class="card-text">Choose toppings:</p>
+
+                            <p class="card-text">Choose your preferd Topping</p>
                             <select required class="form-control" id="toppings">
                                 <option></option>
                                 <option value="tomato">Tomato (100)</option>
@@ -116,14 +114,14 @@
                 </div>
             </div>
         </div><br><br>
-        <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+        <button type="submit" class="order-button btn btn-success" id="submit-pizza">Order Now</button>
         <input type="number" id="amount" placeholder="Number of pizzas"required>
     </form>
     <div class="col-xs-4" id="price-content">
         <h1 class="page-header">Cart</h1>
         <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
         <div id="deliver" class="deliver">
-            <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+            <h5>Delivery fee sh.100</h5><br>
             <form id="address-form">
                 <div class="col-xs-6">
                     <label for="first-name"></label>

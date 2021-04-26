@@ -40,48 +40,7 @@ $(document).ready(function() {
     }
   };
 
-  function Address(address) {
-    this.address = address;
-    this.deliveryAddress = (address);
-  }
-  Order.prototype.finalCost = function() {
-    var cartTotalPrice = [];
-    for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
-      cartTotalPrice += totalPriceArray[arrayElement];
-    }
-    return cartTotalPrice;
-  };
-  $(".btn.check-out").click(function() {
-  });
-  $("form#custom-pizza").submit(function(event) {
-    event.preventDefault();
-    var size = $("select#size").val();
-    var crust = $("select#crust").val();
-    var toppings = $("select#toppings").val();
-    var pizzaDetails = (size + " - " + crust + " - " + toppings);
-    var newPizzaOrder = new Order(size, crust, toppings);
-    newPizzaOrder.pizzaCost();
-    totalPriceArray.push(newPizzaOrder.pizzaPrice);
-    // $("#pizza-details").hide();
-    $("#final-cost").text(newPizzaOrder.finalCost());
-    $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-    // $("#size, #crust, #toppings,").val("");
-  });
-  $("#submit-pizza").click(function() {
-    $("#deliver").toggle();
-  });
-
-  $("#checkout-btn").click(function() {
-    $("#order-details").toggle();
-  });
-  $("form#address-form").submit(function(event) {
-    $(".address-form").toggle();
-    event.preventDefault();
-    var address = $("input#location").val();
-    var newAddress = new Address(address);
-    $("#delivery-option").text("Your pizza will be delivered to: " + newAddress.deliveryAddress);
-  });
-});
+  
 
 
 
