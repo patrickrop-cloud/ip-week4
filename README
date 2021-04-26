@@ -1,0 +1,30 @@
+## Author
+Patrick Rop
+
+## Patrick Rop-Independent Project week4
+The goal of this week's Independent Project is to help us practice and understand better the concepts that we have covered throughout this week. These include working with constructors, prototypes, objects, properties, and methods in Javascript as well as using jQuery and DOM manipulation & traversal.
+The project is about  pizza business and as a way of trying to widen your customer base, i see it right to create a web application whereby customers can order different sizes of pizzas with one or more toppings, flavour and crust. 
+Also the customer is able to receive pizza delivery services at their own comfort zones through our delivery means.
+
+## Installation
+
+Use git, Github and any editor or IDE to see the codes and the rendered frontend.
+
+## Usage
+
+This project has used HTMl for markup and CSS for styling the page, javascript and jquery library for interactivity 
+and functionality, bootstrap for visual, git for tracking files changes and github to host the code.
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Website's link
+to view Live click Here:https://github.com/patrickrop-cloud/IP-week1/edit/main
+
+## License
+This Website uses MIT LICENSE. For more Read License.
+
+Copyright (c) 2021 Patrick Rop
