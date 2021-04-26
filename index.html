@@ -54,6 +54,7 @@
                     <div class="card">
                         <img src="/images/img3.png" class="card-img-top" alt="none">
                         <div class="card-body">
+                            <h5 class="card-title">Sizes of pizza</h5>
                             <p class="card-text">Choose pizza size</p>
                             <select required class="form-control" id="size">
                                 <option></option>
@@ -68,6 +69,7 @@
                     <div class="card">
                         <img src="/images/img1.png" class="card-img-top" alt="none">
                         <div class="card-body">
+                            <h5 class="card-title">Crust</h5>
                             <p class="card-text">Choose a crust:</p>
                             <select required class="form-control" id="crust">
                                 <option></option>
@@ -83,7 +85,7 @@
                   <div class="card">
                       <img src="/images/img3.png" class="card-img-top" alt="none">
                       <div class="card-body">
-                          
+                          <h5 class="card-title">Flavours</h5>
                           <p class="card-text">Choose your prefered flavour</p>
                           <select required class="form-control" id="size">
                               <option></option>
@@ -99,7 +101,7 @@
                     <div class="card">
                         <img src="/images/download (1).jpeg" class="card-img-top" alt="none">
                         <div class="card-body">
-
+                            <h5 class="card-title">Toppings</h5>
                             <p class="card-text">Choose your preferd Topping</p>
                             <select required class="form-control" id="toppings">
                                 <option></option>
@@ -114,24 +116,24 @@
                 </div>
             </div>
         </div><br><br>
-        <button type="submit" class="order-button btn btn-success" id="submit-pizza">Order Now</button>
+        <button type="submit" class="order-button btn btn-success" id="submit-pizza"> Order Now</button>
         <input type="number" id="amount" placeholder="Number of pizzas"required>
     </form>
     <div class="col-xs-4" id="price-content">
         <h1 class="page-header">Cart</h1>
         <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
         <div id="deliver" class="deliver">
-            <h5>Delivery fee sh.100</h5><br>
+            <h5>Delivery fee ksh.100</h5><br>
             <form id="address-form">
                 <div class="col-xs-6">
                     <label for="first-name"></label>
                     <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
-                    <button class="btn btn-dark complete" type="submit">Enter</button>
+                    <button class="btn btn-success" type="submit">Enter</button>
                     <h3><span id="delivery-option"></span></h3>
                 </div>
             </form>
         </div><br>
-        <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button><br><br>
+        <button type="btn" class="btn btn-success" id="checkout-btn">Checkout</button><br><br>
         <div id="order-details" class="col-xs-12">
             <ul id="pizza-details"><strong>Your order is: </strong></ul>
             <h5 id="pizza-details">Thank you and Welcome again!</h5>

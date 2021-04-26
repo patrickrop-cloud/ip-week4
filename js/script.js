@@ -39,10 +39,7 @@ $(document).ready(function() {
       this.pizzaPrice += 150;
     }
   };
-
   
-
-
 
 
 
