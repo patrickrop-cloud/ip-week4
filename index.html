@@ -57,7 +57,7 @@
                     <div class="card">
                         <img src="images/img3.png" class="card-img-top" alt="none">
                         <div class="card-body">
-                            <p class="card-text">Choose Pizza Size</p>
+                            <h2>Choose Pizza Size</h2>
                             <select required class="form-control" id="size">
                                 <option></option>
                                 <option value="small-pizza">Small (300)</option>
@@ -76,6 +76,7 @@
                                 <option></option>
                                 <option value="thin">Thin (100)</option>
                                 <option value="thick">Thick (150)</option>
+                                <option value="stuffed">Stuffed (160)</option>
                                 <option value="custom">Custom (180)</option>
                                 
                             </select>
@@ -120,7 +121,29 @@
     </form>
     <div class="col-xs-4" id="price-content">
         <h1 class="page-header">Cart</h1>
+        <h2>Price: K.sh <span id="final-cost"></span></h2><br><br>
+        <div id="deliver" class="deliver">
+            <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+            <form id="address-form">
+                <div class="col-xs-6">
+                    <label for="first-name"></label>
+                    <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                    <button class="btn btn-dark complete" type="submit">Enter</button>
+                    <h3><span id="delivery-option"></span></h3>
+                </div>
+            </form>
+        </div><br>
+        <button type="btn" class="btn btn-success" id="checkout-btn">Checkout</button><br><br>
+        <div id="order-details" class="col-xs-12">
+            <ul id="pizza-details"><strong>Your order is: </strong></ul>
+            <h4 id="pizza-details">Thank you for shopping with us! Hope to see you soon again.</h4>
+        </div>
+    </div>
+    
+    <!-- <div class="col-xs-4" id="price-content">
+        <h1 class="page-header">Cart</h1>
         <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+    </div>
         <div id="deliver" class="deliver">
             <h5>Delivery fee ksh.100</h5><br>
             <form id="address-form">
@@ -142,7 +165,9 @@
         <a class="footer-link" href="https://www.linkedin.com/in/saramunini"><i class="fab fa-linkedin"></i></a>
         <a class="footer-link" href="https://twitter.com/pixel_tiny"><i class="fab fa-twitter-square"></i></a>
        
-    </footer>
+    </footer> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
 </div>
