@@ -12,34 +12,35 @@
 </head>
 <h1>PIZZA INN</h1>
 <body>
-  <div class="container">
-    <div class="top col-md-12">
-        <nav class="navbar navbar-expand-sm navbar navbar-dark">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#jumbotron">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#custom-pizza">Pizza & Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#price-content">Order</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="back">
-            <div class="col"></div>
-            <img src="images/pizzabg.jpeg" alt="pizza"><br>
-            <h5><b>PIZZA ON THE GO!</b></h5>
+    <div class="container">
+        <div class="top col-md-12">
+            <nav class="navbar navbar-expand-sm navbar navbar-dark">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#jumbotron">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#custom-pizza">Pizza & Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#price-content">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="back">
+                <div class="col"></div>
+                <img src="/images/pizzabg.jpeg" alt="pizza"><br>
+                <h5><b>PIZZA ON THE GO!</b></h5>
+            </div><br>
         </div><br>
-    </div><br>
-    <div class="banner">
-        <h1><b>HEY WATSUP, GRAB YOUR PIZZA AT YOUR BEST PIZZA INN STORE</b></h1>
+        <div class="banner">
+            <h2><b>HEY WATSUP, GRAB YOUR PIZZA AT YOUR BEST PIZZA INN STORE</b></h2>
+        </div><br><br>
     </div><br><br>
     <div class="prices ">
         <p class="about">Karibu to our PIZZA INN. We are the best in bringing out your pizza experience. Grab your favourite crust and<br> 
@@ -50,127 +51,107 @@
         <p>Order with us today and we will deliver to your doorstep immediately. Stand a chance of winning lots of prizes and<br>
         which include free delivery, gifts, shopping vouchers and many more.</p>   
     </div>
-    <form class="form-group" id="custom-pizza">
-        <div class="order">
-            <div class="row">
-                <div class="col-md-4 col-xs-9">
-                    <div class="card">
-                        <img src="images/img3.png" class="card-img-top" alt="none">
-                        <div class="card-body">
-                            <h2>Choose Pizza Size</h2>
-                            <select required class="form-control" id="size">
-                                <option></option>
-                                <option value="small-pizza">Small (300)</option>
-                                <option value="medium-pizza">Medium (500)</option>
-                                <option value="large-pizza">Large (900)</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xs-9">
-                    <div class="card">
-                        <img src="images/img1.png" class="card-img-top" alt="none">
-                        <div class="card-body">
-                            <p class="card-text">Choose your favourite crust</p>
-                            <select required class="form-control" id="crust">
-                                <option></option>
-                                <option value="thin">Thin (100)</option>
-                                <option value="thick">Thick (150)</option>
-                                <option value="stuffed">Stuffed (160)</option>
-                                <option value="custom">Custom (180)</option>
+        <form class="form-group" id="custom-pizza">
+            <div class="order">
+                <div class="row">
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="/images/img1.png" class="card-img-top" alt="none">
+                            <div class="card-body">
                                 
-                            </select>
+                                <p class="card-text">Choose Pizza size</p>
+                                <select required class="form-control" id="size">
+                                    <option></option>
+                                    <option value="small-pizza">small (300)</option>
+                                    <option value="medium-pizza">medium (500)</option>
+                                    <option value="large-pizza">large (900)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="images/img3.png" class="card-img-top" alt="none">
+                            <div class="card-body">
+                                <p class="card-text">Choose your prefered flavour</p>
+                                <select required class="form-control" id="flavour">
+                                    <option></option>
+                                    <option value="bbqsteak">BBQ Steak (50)</option>
+                                    <option value="hawaian">Hawaian (60)</option>
+                                    <option value="vegtikka">Veg Tikka (60)</option>
+                                    <option value="periperi">Peri-peri chicken (70)</option>
+                                    <option value="chickentikka">Chicken Tikka (75)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="/images/img2.png" class="card-img-top" alt="none">
+                            <div class="card-body">
+                                <p class="card-text">Choose your preferd crust</p>
+                                <select required class="form-control" id="crust">
+                                    <option></option>
+                                    
+                                    <option value="thick">Thick (150)</option>
+                                    <option value="thin">Thin (100)</option>
+                                    <option value="custom">Custom (180)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="/images/img3.png" class="card-img-top" alt="none">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">Toppings</h5> -->
+                                <p class="card-text">Choose your preferd toppings</p>
+                                <select required class="form-control" id="toppings">
+                                    <option></option>
+                                    <option value="tomato">Tomato (50)</option>
+                                    <option value="onions">Onions (70)</option>
+                                    <option value="mushroom">Mushroom (70)</option>
+                                    <option value="pepper">Pepper (100)</option>
+                                    <option value="mince">Mince (110)</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-9">
-                  <div class="card">
-                      <img src="images/img3.png" class="card-img-top" alt="none">
-                      <div class="card-body">
-                          <p class="card-text">Choose your prefered flavour</p>
-                          <select required class="form-control" id="size">
-                              <option></option>
-                              <option value="bbqsteak">BBQ Steak (50)</option>
-                              <option value="hawaian">Hawaian (60)</option>
-                              <option value="periperi">Peri-peri chicken (70)</option>
-                              <option value="chicken-tikka">Chicken Tikka (75)</option>
-                          </select>
-                      </div>
-                  </div>
-              </div>
-                <div class="col-md-4 col-xs-9">
-                    <div class="card">
-                        <img src="images/download (1).jpeg" class="card-img-top" alt="none">
-                        <div class="card-body">
-                            <p class="card-text">Choose your prefered Topping</p>
-                            <select required class="form-control" id="toppings">
-                                <option></option>
-                                <option value="tomato">Tomato (100)</option>
-                                <option value="mushrooms">Mushrooms (100)</option>
-                                <option value="pepper">Pepper (150)</option>
-                                <option value="mince">Mince (150)</option>                               
-                                <option value="onions">Onions (120)</option>
-                            </select>
-                        </div>
+            </div><br><br>
+            <button type="submit" class="order-button btn btn-success" id="submit-pizza">Order Now</button>
+            <input type="number" id="totals" placeholder="Number of pizzas"required>
+        </form>
+        <div class="col-xs-4" id="price-content">
+            <h1 class="page-header">Cart</h1>
+            <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+            <div id="deliver" class="deliver">
+                <h5>Our Door step Delivery services fee is Ksh.100. Would you like us to deliver?</h5><br>
+                <form id="address-form">
+                    <div class="col-xs-6">
+                        <label for="first-name"></label>
+                        <input id="location" type="text" size="40" placeholder="Enter your delivery point..." required />
+                        <button class="btn btn-success complete" type="submit">Enter</button>
+                        <h3><span id="delivery-option"></span></h3>
                     </div>
-                </div>
+                </form>
+            </div><br>
+            <button type="btn" class="btn btn-success" id="checkout-btn">Checkout</button><br><br>
+            <div id="order-details" class="col-xs-12">
+                <ul id="pizza-details"><strong>Your order is: </strong></ul>
+                <h5 id="pizza-details">Thank you for shopping with us. We hope to see you soon.</h5>
             </div>
-        </div><br><br>
-        <button type="submit" class="order-button btn btn-success" id="submit-pizza"> Order Now</button>
-        <input type="number" id="amount" placeholder="Number of pizzas"required>
-    </form>
-    <div class="col-xs-4" id="price-content">
-        <h1 class="page-header">Cart</h1>
-        <h2>Price: K.sh <span id="final-cost"></span></h2><br><br>
-        <div id="deliver" class="deliver">
-            <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
-            <form id="address-form">
-                <div class="col-xs-6">
-                    <label for="first-name"></label>
-                    <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
-                    <button class="btn btn-dark complete" type="submit">Enter</button>
-                    <h3><span id="delivery-option"></span></h3>
-                </div>
-            </form>
-        </div><br>
-        <button type="btn" class="btn btn-success" id="checkout-btn">Checkout</button><br><br>
-        <div id="order-details" class="col-xs-12">
-            <ul id="pizza-details"><strong>Your order is: </strong></ul>
-            <h4 id="pizza-details">Thank you for shopping with us! Hope to see you soon again.</h4>
         </div>
-    </div>
+        <footer id="contact" class="footer" size="240px">
     
-    <!-- <div class="col-xs-4" id="price-content">
-        <h1 class="page-header">Cart</h1>
-        <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
-    </div>
-        <div id="deliver" class="deliver">
-            <h5>Delivery fee ksh.100</h5><br>
-            <form id="address-form">
-                <div class="col-xs-6">
-                    <label for="first-name"></label>
-                    <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
-                    <button class="btn btn-success" type="submit">Enter</button>
-                    <h3><span id="delivery-option"></span></h3>
-                </div>
-            </form>
-        </div><br>
-        <button type="btn" class="btn btn-success" id="checkout-btn">Accum Totals</button><br><br>
-        <div id="order-details" class="col-xs-12">
-            <ul id="pizza-details"><strong>Your order is: </strong></ul>
-            <h5 id="pizza-details">Thank you and Welcome again!</h5>
-        </div>
-    </div>
-    <footer id="contact" class="footer" size="240px">
-        <a class="footer-link" href="https://www.linkedin.com/in/saramunini"><i class="fab fa-linkedin"></i></a>
-        <a class="footer-link" href="https://twitter.com/pixel_tiny"><i class="fab fa-twitter-square"></i></a>
-       
-    </footer> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+            <p class="copyright"> © 2021 The Pizza Inn </p>
+        </footer>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
-</div>
-</body>
+    <script src="js/script.js"></script> -->
+
+
 </body>
 </html>
