@@ -39,11 +39,6 @@ $(document).ready(function() {
       this.pizzaPrice += 150;
     }
   };
-  
-
-
-
-
 
 // function Pizza () {
 //     this.toppings = [];
@@ -302,4 +297,4 @@ $(document).ready(function() {
   //         }
   //         break;
      
-  // }
+  // };
